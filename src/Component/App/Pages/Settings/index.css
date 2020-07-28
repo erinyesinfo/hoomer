@@ -1,0 +1,299 @@
+.settings {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 60px 80px;
+}
+.settings .navs {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 120px; /* required */
+}
+.settings .navs a {
+    color: rgba(0,0,0,.54);
+    font-size: 22px;
+    font-weight: 100;
+    text-decoration: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+}.settings .navs a:hover { color: rgba(0,0,0,.64); }
+.settings .navs a.active { color: rgba(0,0,0,.84);font-weight: 400; }
+
+.settings .settings-content {
+    width: 100%;
+    margin-left: 80px;
+}
+.h1-settings { margin: 0 0 40px; }
+.element-settings form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.element-settings form .edit-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}.info-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}.info-container strong {
+    color: rgba(0,0,0,.84);
+    font-size: 19px;
+}.info-container span {
+    font-family: sans-serif;
+    margin-top: 5px;
+}
+.edit-info .edit-photo {
+    cursor: pointer;
+    width: 40px;
+}
+.info-container input {
+    font-size: 16px;
+    font-family: sans-serif;
+    width: 50%;
+    border: none;
+    margin-left: -1px;
+    margin-top: 4px;
+    margin-bottom: -1px;
+}
+.info-container .birthday-edit { display: flex; }
+.info-container .gender-edit {
+    margin-top: 10px;
+    display: inline-flex;
+    flex-direction: column;
+}
+.info-container .ckeditor-edit {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}.info-container .ckeditor-edit div {
+    display: flex;
+}.info-container .ckeditor-edit div input {
+    width: unset;
+    margin: 0;
+}.info-container .ckeditor-edit div label {
+    padding-left: 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.info-container .gender-edit div input {
+    width: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.info-container .gender-edit div label {
+    font-size: 17px;
+    padding-left: 10px;
+    font-family: sans-serif;
+    font-weight: 100;
+    cursor: pointer;
+}.info-container .gender-edit div label.active { font-weight: 600; }
+.element-settings form .edit-info .edit-info-btns {
+    display: flex;
+    align-items: center;
+}
+.element-settings form .btn-edit {
+    color: rgba(0,0,0,.54);
+    background-color: transparent;
+    padding: 6px 18px;
+    font-size: 15px;
+    font-weight: 100;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    cursor: pointer;
+}.element-settings form .btn-edit:hover {
+    color: rgba(0,0,0,.68);
+    border-color: rgba(0,0,0,.54);
+}.element-settings form .btn-save {
+    color: #03a87c;
+    background-color: transparent;
+    padding: 6px 18px;
+    font-size: 15px;
+    font-weight: 100;
+    border: 1px solid #03a87c;
+    border-radius: 4px;
+    margin-right: 7px;
+    cursor: pointer;
+}.element-settings form .btn-save:hover {
+    border-color: #029e74;
+    color: #018f69;
+}
+.element-settings form .edit-info.ckeditor { flex-direction: column; }
+.info-container .ckeditor-edit div label img {
+    border: 1px solid #eee;
+    border-radius: 5px;
+}.info-container .ckeditor-edit div label img:hover { border: 1px solid rgb(156, 156, 156); }
+
+/* Account */
+.h1-account {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.element-account {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}.element-account div:first-of-type {
+    display: flex;
+    flex-direction: column;
+}.element-account div:first-of-type strong {
+    color: rgba(0,0,0,.84);
+    font-size: 19px;
+    margin-bottom: 12px;
+}.element-account div:first-of-type span {
+    color: rgba(0,0,0,.64);
+    font-size: 14px;
+}
+.element-account div:last-of-type {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}.element-account div:last-of-type button:first-of-type {
+    color: rgba(0,0,0,.54);
+    background-color: transparent;
+    padding: 7px 14px;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    margin-right: -1px;
+    cursor: pointer;
+}.element-account div:last-of-type button:last-of-type {
+    color: rgba(0,0,0,.54);
+    background-color: transparent;
+    padding: 7px 14px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+}.element-account div:last-of-type button:first-of-type:hover, .element-account div:last-of-type button:last-of-type:hover {
+    color: rgba(0,0,0,.64);
+}
+.element-account div:last-of-type button.btn-active {
+    background-color: #03a87c;
+    color: #fff;
+    border: 0;
+    -webkit-box-shadow: 0 0 0 1px #03a87c;
+    box-shadow: 0 0 0 1px #03a87c;
+    cursor: default;
+}.element-account div:last-of-type button.btn-active:hover { color: #fff; }
+.element-account button, .element-account a {
+    color: rgba(0,0,0,.54);
+    background-color: transparent;
+    align-self: flex-start;
+    padding: 10px 16px;
+    text-decoration: none;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    cursor: pointer;
+}.element-account button:hover, .element-account a:hover {
+    color: rgba(0,0,0,.64);
+    border-color: rgba(0,0,0,.54);
+}
+
+/* Security */
+.h1-security {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.element-security {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}.element-security div {
+    display: flex;
+    flex-direction: column;
+}.element-security div strong {
+    color: rgba(0,0,0,.84);
+    font-size: 19px;
+    margin-bottom: 12px;
+}.element-security div span {
+    color: rgba(0,0,0,.64);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.element-security button {
+    color: rgba(0,0,0,.64);
+    background-color: transparent;
+    padding: 0;
+    text-decoration: underline;
+    border: none;
+    cursor: pointer;
+}.element-security button:hover { color: rgba(0,0,0,.84); }
+
+
+/* Media screen */
+@media screen and (max-width: 992px) {
+    .settings .settings-content {
+        margin-left: 60px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .settings {
+        margin: 60px 30px;
+    }
+    .settings .navs { display: none; }
+    .settings .settings-content {
+        margin-left: 0;
+    }
+    .info-container .ckeditor-edit div label img {
+        width: 400px; 
+    }
+}
+@media screen and (max-width: 576px) {
+    .info-container strong { font-size: 16px; }
+    .info-container span { font-size: 14px; }
+    .element-settings form .edit-info {
+        flex-direction: column;
+    }
+    .element-settings form .edit-info .edit-info-btns {
+        align-self: flex-end;
+    }
+    .edit-info .edit-photo {
+        align-self: flex-end;
+        width: 30px;
+        margin-top: 10px;
+    }
+    .element-settings form .btn-edit, .element-settings form .btn-save {
+        align-self: flex-end;
+        font-size: 12px;
+        padding: 4px 5px;
+        margin-top: 10px;
+    }
+    .info-container .birthday-edit { flex-direction: column; }
+    .info-container input {
+        width: 100%;
+        font-size: 14px;
+    }
+    .info-container .gender-edit div input { margin-bottom: 5px; } /* gender inputs(radio) */
+    .info-container .gender-edit div label { /* gender label(radio) */
+        font-size: 14px;
+        padding-left: 5px;
+    }
+    .element-account { flex-direction: column; }
+    .element-account div:last-of-type button:first-of-type, .element-account div:last-of-type button:last-of-type {
+        font-size: 13px;
+        padding: 5px 12px;
+    }
+    .element-account .private-notes {
+        align-self: flex-end;
+     }
+    .element-account button, .element-account a {
+        font-size: 13px;
+        padding: 4px 8px;
+        align-self: flex-end;
+        margin-top: 10px;
+    }
+    .info-container .ckeditor-edit div label img {
+        width: 350px;
+    }
+}
+@media screen and (max-width: 476px) {
+    .info-container .ckeditor-edit div label img {
+        width: 200px;
+    }
+}

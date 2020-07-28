@@ -1,0 +1,188 @@
+.edit-photo-modal {
+    text-align: left;
+    width: 920px;
+    padding: 20px;
+}
+.preventcopy {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror /
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently */
+    /* not supported by any browser */
+}
+.edit-photo-modal h3 {
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+.edit-photo-modal h4 {
+    display: inline-flex;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #4d90fe;
+}
+.edit-photo-modal hr {
+    margin-top: -24px;
+    margin-bottom: 30px;
+    opacity: 0.3;
+}
+.edit-photo-modal .btns-photo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.edit-photo-modal .btns-photo div:first-of-type {
+    display: flex;
+}
+.edit-photo-modal .btns-photo div:first-of-type .profile-photo {
+    background: #4d90fe;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    margin-right: 16px;
+    height: 27px;
+    line-height: 27px;
+    min-width: 54px;
+    outline: 0;
+    padding: 0 8px;
+    border: 1px solid #3079ed;
+    opacity: 0.5;
+    cursor: default;
+}.edit-photo-modal .btns-photo div:first-of-type .set-profile-photo {
+    opacity: 1;
+    cursor: pointer;
+}.edit-photo-modal .btns-photo div:first-of-type .set-profile-photo:hover {
+    background: #4588f5;
+    border: 1px solid #2a72e6;
+}
+.edit-photo-modal .btns-photo div:first-of-type button:last-of-type {
+    color: #444;
+    background-color: #f5f5f5;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    margin-right: 16px;
+    height: 27px;
+    line-height: 27px;
+    min-width: 54px;
+    outline: 0;
+    padding: 0 8px;
+    border: 1px solid rgba(0,0,0,0.1);
+    cursor: default;
+}.edit-photo-modal .btns-photo div:first-of-type button:last-of-type:hover {
+    color: rgb(59, 59, 59);
+    border: 1px solid rgba(0,0,0,0.2);
+}
+.edit-photo-modal .btns-photo .photo-note {
+    color: #aaa;
+    font-size: 13px;
+    font-family: Roboto,Arial,sans-serif;
+    padding: 0 20px;
+    padding-left: 20px;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+@media screen and (max-width: 1080px) {
+    .edit-photo-modal { width: 750px; }
+}
+@media screen and (max-width: 992px) {
+    .edit-photo-modal { width: 600px; }
+    .edit-photo-modal .btns-photo .photo-note { font-size: 11px; }
+}
+@media screen and (max-width: 768px) {
+    .edit-photo-modal { width: 420px; }
+}
+@media screen and (max-width: 576px) {
+    .edit-photo-modal { width: 190px;padding: 15px; }
+    .edit-photo-modal .btns-photo div:first-of-type { margin-top: 30px; }
+    .edit-photo-modal .btns-photo .photo-note { display: none; }
+}
+
+
+/* muted - blocking modal */
+.muted-authors, .blocking-users {
+    padding: 0 20px;
+}
+/* Delete account modal */
+.delete-account {
+    color: rgba(0, 0, 0, 0.64);
+    font-family: sans-serif;
+    padding: 30px;
+    max-width: 920px;
+}
+.delete-account h2 {
+    color: rgba(0, 0, 0, 0.84);
+    margin-bottom: 20px;
+}
+.delete-account p:first-of-type {
+    margin: 0 30px;
+    margin-bottom: 30px;
+}
+.delete-account form input {
+    padding: 8px;
+    width: 50%;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.44);
+}
+.delete-account form div button:first-of-type {
+    color: brown;
+    padding: 8px 24px;
+    font-size: 14px;
+    font-family: sans-serif;
+    border: 1px solid brown;
+    border-radius: 4px;
+    margin-right: 5px;
+    cursor: pointer;
+}.delete-account form div button:first-of-type:hover {
+    color: rgb(145, 26, 26);
+    border-color: rgb(141, 26, 26);
+}
+.delete-account form div button:last-of-type {
+    color: rgba(0, 0, 0, 0.64);
+    padding: 8px 24px;
+    border: 1px solid rgba(0,0,0, 0.15);
+    font-size: 14px;
+    font-family: sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+}.delete-account form div button:last-of-type:hover {
+    color: rgba(0, 0, 0, 0.84);
+    border: 1px solid rgba(0,0,0, 0.54);
+}
+
+@media screen and (max-width: 1080px) {
+    .delete-account { width: 750px; }
+}
+@media screen and (max-width: 992px) {
+    .delete-account { width: 600px; }
+}
+@media screen and (max-width: 768px) {
+    .delete-account { width: 420px;padding: 20px; }
+    .delete-account form input {
+        width: 80%;
+    }
+    .delete-account p:first-of-type {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .delete-account { width: 180px; }
+    .delete-account p:first-of-type {
+        font-size: 12px;
+        text-align: left;
+        margin: 0;
+        margin-bottom: 15px;
+    }.delete-account p:last-of-type { text-align: left; }
+    .delete-account form input {
+        display: flex;
+        width: 158px;
+        padding: 7px;
+    }
+    .delete-account form div button:first-of-type, .delete-account form div button:last-of-type {
+        padding: 4px 12px;
+    }
+}

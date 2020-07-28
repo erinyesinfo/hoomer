@@ -1,0 +1,193 @@
+.page-story {
+    margin: 60px 140px;
+}
+.page-story .user-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-family: sans-serif;
+    margin-bottom: 40px;
+}
+.page-story .user-info .user-info-container {
+    display: flex;
+    width: 100%;
+}
+.ProfilePhoto-link {
+    display: inline-flex;
+    margin-right: 10px;
+}
+.page-story .user-info img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.page-story .user-info .profile-name a {
+    display: inline-flex;
+    align-items: center;
+    color: rgba(0, 0, 0, .84);
+    font-size: 14px;
+    font-weight: 300;
+    max-height: 20px;
+    letter-spacing: 0;
+    line-height: 20px;
+    font-style: normal;
+    text-decoration: none;
+    margin-bottom: 2px;
+}.page-story .user-info .profile-name a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.page-story .user-info .profile-outils {
+    display: flex;
+    flex-direction: column;
+}
+.page-story .user-info .profile-outils .profile-date span:first-of-type {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}.page-story .user-info .profile-outils .profile-date span:first-of-type:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.page-story .user-info .profile-outils .profile-date span.circle {
+    background: rgba(0, 0, 0, .44);
+    height: 3px;
+    width: 3px;
+    display: inline-flex;
+    border-radius: 50%;
+    margin: 3px 5px;
+}
+.page-story .user-info .profile-outils .profile-date span:last-of-type {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}.page-story .user-info .profile-outils .profile-date span:last-of-type:hover { cursor: default; }
+.page-story .user-info .profile-social {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.page-story .user-info .profile-social .twitter, .page-story .user-info .profile-social .in, .page-story .user-info .profile-social .fb, .page-story .user-info .profile-social .save {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.page-story .user-info .profile-social div svg {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+.page-story .user-info .profile-social .story-points {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    margin-top: -3px;
+    position: relative;
+    cursor: pointer;
+}
+.page-story .user-info .profile-social .story-points .point {
+    display: inline-flex;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 5px;
+    margin-right: 3px;
+    height: 5px;
+}
+.page-story .user-info .profile-social .story-points .story-properties {
+    position: absolute;
+    left: -60px;
+    top: 25px;
+    background-color: white;
+    width: 140px;
+    padding: 10px 0 10px 20px;
+    border-radius: 4px;
+    margin-top: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.25),0 0 1px rgba(0,0,0,.35);
+    box-shadow: 0 1px 2px rgba(0,0,0,.25),0 0 1px rgba(0,0,0,.35);
+    cursor: default;
+}.page-story .user-info .profile-social .story-points .story-properties::before {
+    content: "";
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #fff;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 68px;
+    top: -7px;
+    z-index: 5;
+}.page-story .user-info .profile-social .story-points .story-properties::after {
+    content: "";
+    border-left: 7.5px solid transparent;
+    border-right: 7.5px solid transparent;
+    border-bottom: 7.5px solid rgb(133, 127, 127);
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 68px;
+    top: -7px;
+    z-index: 4;
+}
+.page-story .user-info .profile-social .story-points .story-properties a {
+    color: rgb(117, 117, 117);
+    display: inline-flex;
+    margin-bottom: 10px;
+    text-decoration: none;
+}.page-story .user-info .profile-social .story-points .story-properties a:hover { color: rgb(25, 25, 25); }
+.page-story .user-info .profile-social .story-points .story-properties a:last-of-type { margin-bottom: 0;}
+
+.page-story-tag {
+    color: rgb(117, 117, 117);
+    background: rgb(242, 242, 242) none repeat scroll 0% 0%;
+    display: inline-flex;
+    line-height: 22px;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}.page-story-tag:hover { color: rgb(236, 235, 235);background: rgb(117, 116, 116) none repeat scroll 0% 0%; }
+
+
+@media screen and (max-width: 768px) {
+    .page-story {
+        margin: 50px 60px;
+    }
+    .page-story .user-info .profile-social .story-points .story-properties {
+        left: unset;
+        right: -20px;
+    }.page-story .user-info .profile-social .story-points .story-properties::before, .page-story .user-info .profile-social .story-points .story-properties::after {
+        left: 117px;
+    }
+    .page-story .user-info .profile-social .story-points .story-properties a {
+        margin-bottom: 8px
+    }
+}
+@media screen and (max-width: 576px) {
+    .page-story {
+        margin: 40px 20px;
+    }
+    .page-story .user-info { flex-direction: column; }
+    .page-story .user-info .profile-social {
+        align-self: flex-end;
+        margin-top: 15px;
+    }
+    .page-story .user-info .profile-social .story-points .story-properties {
+        left: unset;
+        right: -10px;
+        font-size: 14px;
+    }.page-story .user-info .profile-social .story-points .story-properties::before, .page-story .user-info .profile-social .story-points .story-properties::after {
+        left: 128px;
+    }
+}

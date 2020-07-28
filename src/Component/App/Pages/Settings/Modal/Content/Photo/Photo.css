@@ -1,0 +1,83 @@
+.edit-photo-modal .photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    cursor: pointer;
+}
+.edit-photo-modal .photo-container button {
+    color: #444;
+    background-color: #f5f5f5;
+    font-size: 11px;
+    font-family: sans-serif;
+    font-weight: bold;
+    height: 27px;
+    line-height: 27px;
+    min-width: 54px;
+    outline: 0;
+    padding: 0 8px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 2px;
+    cursor: pointer;
+}.edit-photo-modal .photo-container button:hover {
+    color: rgb(59, 59, 59);
+    border: 1px solid rgba(0,0,0,0.2);
+}
+.upload-btn {
+    margin: 0 0 15px;
+}
+.upload-btn img {
+    height: 30px;
+}
+.upload-container {
+    display: flex;
+    height: 70%;
+    width: 50%;
+    margin-bottom: 15px;
+}
+.bg-img-removeImage {
+    position: relative;
+    background: url("http://unsplash.it/1200x800") center center no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.bg-img-removeImage:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #000, #000);
+    opacity: .6;
+}
+.bg-img-removeImage span {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    color:beige;
+    font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+    .upload-container {
+        display: flex;
+        height: 70%;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .edit-photo-modal .photo-container {
+        height: auto;
+        width: 100%;
+     }
+    .upload-container {
+        max-height: 120px;
+        max-width: 120px;
+        overflow: hidden;
+    }
+    .upload-container img {
+        height: 100%;
+        width: 100%;
+    }
+}

@@ -1,0 +1,39 @@
+.container { position: relative; }
+.text-animate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: black;
+  width: 150px;
+  padding: 3px;
+  font-size: 17px;
+  position: absolute;
+  top: -30px;
+  border-radius: 6px;
+}.text-animate span {
+  display: flex;
+  border: 1px solid #000;
+  padding: 0 6px;
+  background: black;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}.text-animate .text-link img { flex: 1; }
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 10px 80px;
+  position: relative;
+}
+.story {
+  border: none;
+  font-size: 18px;
+  display: flex;
+  width: 100%;
+  margin: 10px 0;
+  padding: 0;
+  resize: none;
+  overflow: hidden;
+}
+.empty { width: 100%; }

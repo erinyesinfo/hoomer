@@ -1,0 +1,97 @@
+.profile-user {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 80px;
+}.profile-user .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}.profile-user .info .user {
+    display: flex;
+    flex-direction: column;
+}
+.profile-user .info .user .outil {
+    display: flex;
+    align-items: flex-end;
+}.profile-user .info .user .outil .name {
+    font-size: 48px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-right: 5px;
+}
+.profile-user .info .user .outil a {
+    color: cornflowerblue;
+    background-color: transparent;
+    padding: 6px;
+    border-radius: 45%;
+    font-size: 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}.profile-user .info .user .outil a:hover { color: #4f7fd7; }
+.profile-upload-photo {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}.profile-upload-photo img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.profile-user .info .profile-image {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}.profile-user .info .profile-image #man-svg {
+    background-color: beige;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+.profile-user .info .profile-camera-upload {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    bottom: 0px;
+    opacity: 0.8;
+    cursor: pointer;
+}.profile-user .info .profile-camera-upload .camera-svg {
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+/* Media screen */
+@media screen and (max-width: 768px) {
+    .profile-user {
+        margin: 40px 30px;
+    }
+    .profile-user .info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .profile-user .info .user { margin-bottom: 30px; }
+    .profile-user .info .user .outil .name {
+        font-size: 38px;
+    }
+    .profile-user .info .user .outil { align-items: center; }
+    .profile-user .info .user .outil a {
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 576px) {
+    .profile-user .user-description {
+        font-size: 14px;
+        font-weight: lighter;
+    }
+    .profile-user .info .user .outil .name {
+        font-size: 30px;
+    }
+    .profile-user .info .user .following {
+        font-size: 14px;
+    }
+}

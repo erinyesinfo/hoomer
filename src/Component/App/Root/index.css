@@ -1,0 +1,208 @@
+/* header */
+.stories .sub-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px 80px 10px;
+}
+.stories .sub-header h1 {
+    font-size: 38px;
+    font-family: sans-serif;
+    letter-spacing: -1.25px;
+    margin: 0;
+}
+.stories .sub-header .write {
+    color: rgb(2, 158, 116);
+    background-color: transparent;
+    padding: 8px 16px;
+    border: 1px solid rgb(2, 158, 116);
+    border-radius: 4px;
+    text-decoration: none;
+}.stories .sub-header .write:hover {
+    color: rgb(1, 143, 105);
+    border: 1px solid rgb(2, 158, 116);
+    cursor: pointer;
+}
+/* content */
+.stories .content {
+    display: flex;
+    flex-direction: column;
+    margin: 35px 80px 10px;
+}.stories .content .navs-hr {
+    width: 100%;
+    opacity: 0.4;
+    color: azure;
+    margin-top: -1px;
+    margin-bottom: 20px;
+}
+
+/* btns */
+.stories .content .navs .draft {
+    color: rgba(0, 0, 0, 0.54);
+    background-color: transparent;
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 10px 0;
+    margin-right: 15px;
+    border: none;
+    cursor: pointer;
+}.stories .content .navs .draft:hover { color: rgba(0, 0, 0, 0.9); }
+.stories .content .navs .draft span { font-size: 12px; }
+.stories .content .navs .published {
+    color: rgba(0, 0, 0, 0.54);
+    background-color: transparent;
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 10px 0;
+    margin-right: 15px;
+    border: none;
+    cursor: pointer;
+}.stories .content .navs .published:hover { color: rgba(0, 0, 0, 0.9); }
+.stories .content .navs .published span { font-size: 12px; }
+.stories .content .navs .draft.active, .stories .content .navs .published.active {
+    color: rgba(0, 0, 0, 0.84);
+    border-bottom: 1px solid #000;
+    cursor: default;
+}
+
+.stories .content .title {
+    margin: 0;
+}.stories .content .title a {
+    color: rgba(0, 0, 0, 0.84);
+    text-decoration: none;
+}
+.stories .content .subtitle {
+    color: rgba(0, 0, 0, 0.54);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}.stories .content .subtitle a { color: rgba(0, 0, 0, 0.54);text-decoration: none; }
+.stories .content .time-read {
+    display: flex;
+    align-items: baseline;
+}.stories .content .time-read .arrow-down svg {
+    width: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.stories .content .last-edited {
+    color: rgba(0, 0, 0, 0.54); 
+}
+.stories-hr {
+    width: 100%;
+    opacity: 0.4;
+    color: azure;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.stories .content .time-read .arrow-down { position: relative; }
+.stories .content .time-read .arrow-down .drop-down {
+    background-color: #fff;
+    font-size: 15px;
+    position: absolute;
+    top: 30px;
+    left: -30px;
+    width: 100px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.25),0 0 1px rgba(0,0,0,.35);
+    box-shadow: 0 1px 2px rgba(0,0,0,.25),0 0 1px rgba(0,0,0,.35);
+    z-index: 1;
+}.stories .content .time-read .arrow-down .drop-down::before {
+    content: "";
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #fff;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 38px;
+    top: -9px;
+    z-index: 5;
+}.stories .content .time-read .arrow-down .drop-down::after {
+    content: "";
+    border-left: 9.5px solid transparent;
+    border-right: 9.5px solid transparent;
+    border-bottom: 9.5px solid rgb(133, 127, 127);
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 38px;
+    top: -9px;
+    z-index: 4;
+}.stories .content .time-read .arrow-down .drop-down .edit {
+    margin-bottom: 5px;
+}.stories .content .time-read .arrow-down .drop-down .story-settings { margin-top: 5px; }
+.stories .content .time-read .arrow-down .drop-down .edit a, .stories .content .time-read .arrow-down .drop-down .delete, .stories .content .time-read .arrow-down .drop-down .story-settings a {
+    color: rgba(0, 0, 0, 0.54);
+    text-decoration: none;
+}.stories .content .time-read .arrow-down .drop-down .edit a:hover, .stories .content .time-read .arrow-down .drop-down .delete:hover, .stories .content .time-read .arrow-down .drop-down .story-settings a:hover {
+    color: rgba(0, 0, 0, 0.84);
+    cursor: pointer;
+}
+.stories .content .time-read.fixSpace {
+    margin-top: 15px;
+}
+
+.modal-delete-content {
+    display: flex;
+    flex-direction: column;
+}
+.modal-delete-content h1 {
+    margin: 0;
+    text-align: center;
+}
+.modal-delete-content .note {
+    color: rgba(0, 0, 0, 0.54);
+    margin-top: 10px;
+}
+.modal-delete-content .btns {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}.modal-delete-content .btns .delete {
+    color: rgba(0, 0, 0, 0.54);
+    background: transparent;
+    padding: 7px 16px;
+    margin-right: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.34);
+    border-radius: 4px;
+    cursor: pointer;
+}.modal-delete-content .btns .delete:hover { color: rgb(204, 84, 84);border: 1px solid rgb(204, 84, 84); }
+.modal-delete-content .btns .cancel {
+    color: rgba(0, 0, 0, 0.84);
+    background: transparent;
+    padding: 7px 16px;
+    border: 1px solid rgba(0, 0, 0, 0.54);
+    border-radius: 4px;
+    cursor: pointer;
+}.modal-delete-content .btns .cancel:hover { border: 1px solid rgba(0, 0, 0, 0.84); }
+
+
+@media screen and (max-width: 768px) {
+    .stories .sub-header {
+        margin: 60px 30px 10px;
+    }
+    .stories .content {
+        margin: 30px 30px 10px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .stories .sub-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .stories .sub-header h1 { margin-bottom: 20px; }
+    .stories .content .time-read .arrow-down .drop-down {
+        font-size: 14px;
+        width: 90px;
+        padding: 7px 14px;
+        left: unset;
+        right: -10px;
+    }.stories .content .time-read .arrow-down .drop-down::before, .stories .content .time-read .arrow-down .drop-down::after {
+        left: unset;
+        right: 9px;
+    }
+    .stories .content .time-read .arrow-down .drop-down .edit { margin-bottom: 3px; }
+    .stories .content .time-read .arrow-down .drop-down .story-settings { margin-top: 3px; }
+}

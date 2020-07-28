@@ -1,0 +1,310 @@
+.page-story-settings {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 60px 80px;
+    padding-right: 120px;
+}
+.page-story-settings .navs {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 120px; /* required */
+    width: 150px;
+    margin-right: 60px;
+}.page-story-settings .navs a {
+    color: rgba(0,0,0,.64);
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+}.page-story-settings .navs a:hover { color: rgba(0,0,0,.84); }
+.page-story-settings .navs a.active { color: rgba(0,0,0,.94); }
+.h2-author, .h2-readerInterests, .h2-contentLicensing, .h2-delete {
+    color: rgba(0, 0, 0, .94);
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 100;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+
+.h1-story-settings {
+    margin-top: 0;
+}.h1-story-settings span {
+    color: darkslateblue;
+}
+/* Author */
+.author-overview {
+    display: inline-flex;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.element-author {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.element-author img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.element-author svg {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.element-author .author-info {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+.element-author .author-info .author-name {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+.element-author .author-info .author-username {
+    color: rgba(0, 0, 0, .94);
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Reader Interests */
+.element-readerInterests {
+    display: flex;
+    flex-direction: column;
+}
+.element-readerInterests label {
+    font-size: 14px;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, .74);
+}
+.element-readerInterests .tags {
+    margin-top: 20px;
+}
+.element-readerInterests .tags .story-tag {
+    color: rgba(0, 0, 0, .94);
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}.element-readerInterests .tags .story-tag .remove {
+    display: inline-flex;
+    margin-left: 10px;
+    color: rgba(0, 0, 0, .64);
+    margin-right: 30px;
+    font-size: 16px;
+    font-family: arial;
+    cursor: pointer;
+}.element-readerInterests .tags .story-tag .remove:hover { color: brown; }
+.element-readerInterests input {
+    border: none;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    resize: none;
+    height: 20px;
+    width: 200px;
+    font-family: sanser-serif;
+    margin-top: 20px;
+    padding: 4px 0px;
+    color: rgba(0, 0, 0, .84);
+    margin-bottom: 20px;
+}
+.element-readerInterests .done {
+    color: white;
+    background: rgb(3, 168, 124) none repeat scroll 0% 0%;
+    width: 90px;
+    padding: 8px 16px;
+    border: 1px solid rgb(3, 168, 124);
+    border-radius: 4px;
+    opacity: 0.5;
+}.element-readerInterests .done:hover {
+    background: rgb(3, 168, 124) none repeat scroll 0% 0%;
+    border-color: rgb(3, 168, 124);
+    cursor: default;
+}
+.element-readerInterests .done.tags-btn {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+/* Content Licensin */
+.element-contentLicensing .content-licensing {
+    color: rgba(0, 0, 0, .84);
+    padding: 0 30px;
+    margin-top: 50px;
+}.element-contentLicensing .content-licensing .copyright {
+    color: rgba(0, 0, 0, .94);
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, .54);
+    margin-bottom: 20px;
+}
+.element-contentLicensing .content-licensing .copyright .copyright-inputs {
+    color: rgba(0, 0, 0, .84);
+    font-size: 16px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+.element-contentLicensing .content-licensing .copyright .copyright-inputs label {
+    margin-left: 10px;
+}
+.element-contentLicensing .content-licensing span {
+    display: inline-flex;
+    margin-bottom: 50px;
+    font-size: 14px;
+}
+.edit-licensing { /* btn */
+    color: rgba(0, 0, 0, .84);
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, .44);
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-family: sans-serif;
+}.edit-licensing:hover {
+    color: rgba(0, 0, 0, .94);
+    border: 1px solid rgba(0, 0, 0, .64);
+    cursor: pointer;
+}.edit-licensing:active {
+    padding: 11px 19px 9px 21px;
+}
+.cancel-edit-licensing { /* btn */
+    color: rgba(0, 0, 0, .74);
+    background: transparent;
+    padding: 8px 16px;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 4px;
+}.cancel-edit-licensing:hover {
+    color: rgba(0, 0, 0, .94);
+    cursor: pointer;
+}.cancel-edit-licensing:active { padding: 9px 15px 7px 17px; }
+.save-edit-licensing { /* btn */
+    color: white;
+    background: rgb(3, 168, 124) none repeat scroll 0% 0%;
+    width: 90px;
+    padding: 8px 16px;
+    border: 1px solid rgb(3, 168, 124);
+    border-radius: 4px;
+    margin-right: 7px;
+    opacity: 0.5;
+}.save-edit-licensing:hover {
+    background: rgb(3, 168, 124) none repeat scroll 0% 0%;
+    border-color: rgb(3, 168, 124);
+    cursor: default;
+}
+.save-edit-licensing.licensing-active {
+    opacity: 1;
+    cursor: pointer;
+}.save-edit-licensing.licensing-active:active { padding: 8px 15px 8px 17px; }
+
+
+/*  Delete story */
+.delete-story {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.delete-story-btn {
+    color: white;
+    background: brown;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 4px;
+    font-family: sans-serif;
+}.delete-story-btn:hover {
+    background: rgb(143, 30, 30);
+    cursor: pointer;
+}
+.delete-story-btn.delete-active {
+    background: rgb(143, 30, 30);
+    cursor: default;
+}
+.yes-btn {
+    color: rgba(255, 0, 0, .64);
+    background: transparent;
+    padding: 7px 20px;
+    border: 1px solid crimson;
+    border-radius: 5px;
+    font-family: sans-serif;
+}.yes-btn:hover {
+    color: rgba(255, 0, 0, .84);
+    border: 1px solid rgb(202, 8, 47);
+    cursor: pointer;
+}.yes-btn:active { padding: 7px 19px 7px 21px; }
+.no-btn {
+    color: rgba(0, 0, 0, .64);
+    background-color: transparent;
+    padding: 7px 20px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    margin-left: 10px;
+    border: 1px solid rgba(0, 0, 0, .54);
+}.no-btn:hover {
+    color: rgba(0, 0, 0, .84);
+    border: 1px solid rgba(0, 0, 0, .64);
+    cursor: pointer;
+}.no-btn:active { padding: 7px 19px 7px 21px; }
+
+@media screen and (max-width: 768px) {
+    .page-story-settings {
+        margin: 50px 30px;
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 576px) {
+    .page-story-settings {
+        margin: 20px;
+    }
+    .page-story-settings .navs { display: none; }
+    .h1-story-settings { font-size: 22px; }
+    .h1-story-settings span { font-size: 26px; }
+    .h2-author, .h2-readerInterests, .h2-contentLicensing, .h2-delete {
+        font-size: 18px;
+        margin-top: 40px;
+    }
+    /* element author */
+    .element-author { align-items: center; }
+    .element-author .author-info .author-name {
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .element-author .author-info .author-username { font-size: 12px; }
+    .settings-content { margin-top: 30px; }
+    .element-contentLicensing .content-licensing {
+        padding: 0 25px;
+        margin-top: 30px;
+    }
+    .element-contentLicensing .content-licensing .copyright {
+        font-size: 15px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .element-contentLicensing .content-licensing span {
+        font-size: 12px;
+        margin-bottom: 40px;
+    }
+    .element-contentLicensing .content-licensing .copyright .copyright-inputs {
+        font-size: 15px;
+        margin-bottom: 7px;
+    }
+    /* delte element */
+    .yes-btn, .no-btn {
+        font-size: 12px;
+        padding: 4px 10px;
+    }.yes-btn:active, .no-btn:active {
+        padding: 4px 9px 4px 11px;
+    }
+}
